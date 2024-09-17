@@ -76,4 +76,4 @@ class TestBooksCollector:
     def test_get_list_of_favorites_books_add_two_books_in_favorites_get_two_books(self, books_collector):
         books_collector.add_book_in_favorites('Лунтик')
         books_collector.add_book_in_favorites('Мгла')
-        assert books_collector.favorites == ['Лунтик', 'Мгла']
+        assert books_collector.get_list_of_favorites_books() == ['Лунтик', 'Мгла']
